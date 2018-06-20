@@ -1,0 +1,21 @@
+<p>
+    DEPARTAMENTO
+</p>
+<table *ngIf="departments" class="table table-bordered">
+    <thead>
+        <tr>
+            <th scope="col">Código</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Código Padre</th>
+            <th scope="col">Descripción Padre</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let department of departments">
+            <td> {{ department.currentCode }} </td>
+            <td> {{ department.currentName }} </td>
+            <td> - </td>
+            <td> - </td>
+        </tr>
+    </tbody>
+</table>

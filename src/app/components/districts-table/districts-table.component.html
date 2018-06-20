@@ -1,0 +1,21 @@
+<p>
+    DISTRITO
+</p>
+<table *ngIf="districts" class="table table-bordered">
+    <thead>
+        <tr>
+            <th scope="col">Código</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Código Padre</th>
+            <th scope="col">Descripción Padre</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let district of districts">
+            <td> {{ district.currentCode }} </td>
+            <td> {{ district.currentName }} </td>
+            <td> {{ district.parentCode }} </td>
+            <td> {{ district.parentName }} </td>
+        </tr>
+    </tbody>
+</table>
